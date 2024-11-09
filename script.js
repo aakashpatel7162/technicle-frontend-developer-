@@ -76,11 +76,11 @@ function addAnotherItem(boxNumber) {
 function getPrice(boxNumber) {
   switch (boxNumber) {
     case 1:
-      return 40;
+      return 10;
     case 2:
-      return 50;
+      return 18;
     case 3:
-      return 60;
+      return 24;
     default:
       return 0;
   }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Sandal Boxes</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
   </head>
   <body>
     <div class="container">
@@ -34,13 +36,16 @@
           </div>
         </div>
         <div class="options" id="options1">
-          <p>Total Items for Unit 1: <span id="total-items-box1">0</span></p>
-          <button onclick="addAnotherItem(1)" id="add-another-btn1">
-            Add Another Item
-          </button>
-
+          <div class="item-detail">
+            <p>Total Items for Unit 1: <strong id="total-items-box1">0</strong></p>
+            <button onclick="addAnotherItem(1)" id="add-another-btn1">
+              Add Another Item
+            </button>
+  
+          </div>
+         
           <div class="item-selector" id="item-selector1">
-            <label for="size-color1" id="label2">Select Size and Color:</label>
+            <label for="size-color1" id="label2" >Select Size and Color:</label>
 
             <div class="input-row">
               <select id="size1">
@@ -66,6 +71,8 @@
       </div>
 
       <div class="box" id="box2">
+        <div class="popular-banner">Most Popular</div>
+      
         <div class="box-top-section">
           <div>
             <input
@@ -76,25 +83,28 @@
             />
             <label for="radio2" id="label">Unit 2</label><button class="off_btn">20% OFF</button>
             <div class="standard-price">
-
               Standard price
-              </div>
+            </div>
           </div>
           <div id="prices">
             <span class="discount-price">$18.00 USD</span>
             <span class="actual-price">$24.00 USD</span>
           </div>
         </div>
+      
         <div class="options" id="options2">
-          <p>Total Items for Unit 2: <span id="total-items-box2">0</span></p>
+          <div class="item-detail">
 
+          <p>Total Items for Unit 2: <strong id="total-items-box2">0</strong></p>
+      
           <button onclick="addAnotherItem(2)" id="add-another-btn2">
             Add Another Item
           </button>
-
+          </div>
+      
           <div class="item-selector" id="item-selector2">
             <label for="size-color2" id="label2">Select Size and Color:</label>
-
+      
             <div class="input-row">
               <select id="size2">
                 <option value="">Choose Size</option>
@@ -102,14 +112,14 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
               </select>
-
+      
               <select id="color2">
                 <option value="">Choose Color</option>
                 <option value="Red">Red</option>
                 <option value="Blue">Blue</option>
                 <option value="Green">Green</option>
               </select>
-
+      
               <button onclick="addItem(2)" class="add-item-btn">
                 Add this Item
               </button>
@@ -117,7 +127,7 @@
           </div>
         </div>
       </div>
-
+      
       <div class="box" id="box3">
         <div class="box-top-section">
           <div>
@@ -139,11 +149,14 @@
           </div>
         </div>
         <div class="options" id="options3">
-          <p>Total Items for Unit 3: <span id="total-items-box3">0</span></p>
+          <div class="item-detail">
+
+          <p>Total Items for Unit 3: <strong id="total-items-box3">0</strong></p>
 
           <button onclick="addAnotherItem(3)" id="add-another-btn3">
             Add Another Item
           </button>
+          </div>
 
           <div class="item-selector" id="item-selector3">
             <label for="size-color3" id="label2">Select Size and Color:</label>
@@ -178,9 +191,8 @@
           <span>Total Items: <span id="total-items">0</span></span>
         </span>
       </div>
-      <button onclick="showTotalInfo()" id="total-info">+ Add to cart</button>
+      <button onclick="showTotalInfo()" id="total-info">+ Add to Cart</button>
     </div>
 
-    <script src="script.js"></script>
   </body>
 </html>
